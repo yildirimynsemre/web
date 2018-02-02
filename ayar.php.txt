@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php
+        $host="localhost";
+        $kullaniciadi="root";
+        $parola="";
+        $veritabani="emre";
+        
+        $baglanti= mysqli_connect($host, $kullaniciadi, $parola);
+        if($baglanti)            echo 'Mysql baglantisi basarili';
+        else            echo 'Mysql baglantisi basarisiz. Hata :'. mysqli_error();
+        
+        @mysqli_select_db($baglanti,$veritabani);
+        
+        
+            
+        
+        
+        ?>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        
+        <?php
+        include ("ayar.php");
+        $numara=$_POST["txtNumaraSil"];
+        $sonuc= mysqli_query($baglanti, "delete from emreproje where numara='$numara'");
+        
+        if ($sonuc)            echo 'numara basari ile silinmistir';
+        else            echo 'bir sorun olustu';
+        
+        ?>
+        
+        
+    </body>
+</html>

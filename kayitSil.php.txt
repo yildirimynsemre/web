@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <form name="form2" method="post" action="numaraSil.php">
+            <table border="1" width="500">
+                
+                    <tr>
+                        <td colspan="2">NUMARA SILME EKRANI</td>
+                    </tr>
+                
+                
+                    
+                    <tr>
+                        <td>Silinecek Numarayý Giriniz :</td>
+                        <td><label for="txtNumaraSil"></label>
+                            <input type="text" name="txtNumaraSil" id="txtNumaraSil"</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input type="submit" name="btnSil" id="btnSil" value="Numara Sil" /> </td>
+                        
+                    </tr>
+    </body>
+</html>

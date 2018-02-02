@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <?php
+        
+        include ("ayar.php");
+        
+        $isim=$_POST["txtIsim"];
+        $soyisim=$_POST["txtSoyisim"];
+        $numara=$_POST["txtNumara"];
+        $adres=$_POST["txtAdres"];
+        
+        $sonuc= mysqli_query($baglanti,"insert into emreproje values('$isim','$soyisim','$numara','$adres')");
+        
+        if($sonuc)            echo 'kayit basarili';
+        else            echo 'kayit basarisiz';
+            
+        
+        
+        
+        ?>
+        
+    </body>
+</html>
+
